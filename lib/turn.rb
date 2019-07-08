@@ -1,6 +1,6 @@
 board = [" "," "," "," "," "," "," "," "," "]
 
-def display_board(board, index, value)
+def display_board(board)
 
 end
 
