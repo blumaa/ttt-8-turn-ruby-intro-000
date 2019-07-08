@@ -8,22 +8,22 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def valid_move?(board, index)
+def valid_move?(board, user_input)
   if position_taken?(board, index) == false && index.between?(0,8) == true
     true
   end
 end
 
-def position_taken?(board, index)
-  if board[index] == " "
+def position_taken?(board, user_input)
+  if board[user_input] == " "
     false
-  elsif board[index] == ""
+  elsif board[user_input] == ""
     false
-  elsif board[index] == "X"
+  elsif board[user_input] == "X"
     true
-  elsif board[index] == "O"
+  elsif board[user_input] == "O"
     true
-  elsif board[index] == nil
+  elsif board[user_input] == nil
     false
   else
   end
@@ -34,7 +34,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, user_input = "X")
-  board[index] = user_input
+  board[user_input] = user_input
 end
 
 def turn(board)
