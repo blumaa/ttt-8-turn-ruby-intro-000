@@ -11,5 +11,5 @@ input_to_index(user_input)
   if user_input = true
     move
   else
-    puts "try again" 
+    puts "try again"
   end
