@@ -42,7 +42,7 @@ def turn(board)
   user_input = gets.strip
   input_to_index(user_input)
   valid_move?(board, user_input)
-  if valid_move? = true
+  if valid_move? == true
     turn(board)
   else
     puts "try again"
