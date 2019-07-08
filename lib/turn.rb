@@ -45,6 +45,6 @@ def turn(board)
   while user_input = false
     puts "Please try again"
   end
-    
+
   end
 end
