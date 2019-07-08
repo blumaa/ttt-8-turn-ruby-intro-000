@@ -42,4 +42,9 @@ def turn(board)
   user_input = gets.strip
   input_to_index(user_input)
   valid_move?(board, user_input)
+  while user_input = false
+    puts "Please try again"
+  end
+    
+  end
 end
